@@ -113,14 +113,12 @@ export default function Tickets() {
         />
       </div>
 
-      {/* Main Container */}
       <motion.div
         className="relative z-10 bg-white rounded-2xl shadow-xl max-w-[1440px] w-full mx-auto p-6 sm:p-8 md:p-16 text-center"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Header (fixed for mobile) */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-8 gap-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
             Ticket Management
@@ -133,7 +131,6 @@ export default function Tickets() {
           </Link>
         </div>
 
-        {/* Ticket Form */}
         <form
           onSubmit={handleSubmit}
           className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left mb-8"
@@ -169,7 +166,6 @@ export default function Tickets() {
           </button>
         </form>
 
-        {/* Ticket Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tickets.length === 0 ? (
             <p className="text-gray-500 col-span-full">

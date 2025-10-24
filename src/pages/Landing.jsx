@@ -64,7 +64,6 @@ export default function Landing() {
         />
       </div>
 
-      {/* Hero Section */}
       <motion.div
         className="relative z-10 mt-50 max-w-2xl"
         initial={{ opacity: 0, y: 40 }}
@@ -76,7 +75,7 @@ export default function Landing() {
         </h1>
 
         <p className="mt-3 text-lg md:text-2xl font-body text-gray-700">
-          Manage your support tickets easily — create, track, and resolve
+          Manage your support tickets easily: create, track, and resolve
           requests with clarity and speed.
         </p>
 
