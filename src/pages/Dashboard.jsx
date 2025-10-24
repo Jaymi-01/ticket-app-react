@@ -88,14 +88,12 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Dashboard Container */}
       <motion.div
         className="relative z-10 bg-white rounded-2xl shadow-xl max-w-[1440px] w-full mx-auto p-8 md:p-16 text-center mt-16"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-primary">
             Dashboard
@@ -108,7 +106,6 @@ export default function Dashboard() {
           </button>
         </div>
 
-        {/* Welcome Section */}
         <h2 className="text-2xl font-semibold text-gray-700 mb-6 flex flex-col md:flex-row items-center justify-center gap-2">
           Welcome back,{" "}
           <span className="text-primary font-bold flex items-center gap-2">
@@ -128,7 +125,6 @@ export default function Dashboard() {
           </span>
         </h2>
 
-        {/* Ticket Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 mb-12">
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -175,7 +171,6 @@ export default function Dashboard() {
           </motion.div>
         </div>
 
-        {/* Navigation */}
         <div className="mt-4">
           <Link
             to="/tickets"
